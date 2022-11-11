@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title> Library Management System </title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="" class="nav__logo">LMS</a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bxs-briefcase-alt-2'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bx-message-square-detail' ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, This is a</span>
+                        <h1 class="home__name">LIBRARY MANAGEMENT SYSTEM</h1>
+                    </div>
+            </section>
+
+            <!-- =============== WORK =============== -->
+            <section class="work section" id="work">
+                <span class="section__subtitle">LIBRARY</span>
+                <h2 class="section__title">BOOKS</h2>
+
+                <div class="work__filters">
+                    <span class="work__item active-work" data-filter="all">All</span>
+                    <span class="work__item" data-filter=".edu">Education</span>
+                    <span class="work__item" data-filter=".fiction">Fiction</span>
+                    <span class="work__item" data-filter=".adv">Adventure</span>
+                </div>
+
+                <div class="work__container container grid">
+                    <div class="edu work__card mix web">
+                        <img src="assets/img/Python.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Python</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">Python</h3>
+                                <p class="education__modal-description">
+                                    Author Name: Mark Lutz
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 8
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: June 2019
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix adv">
+                        <img src="assets/img/Famous Five.webp" alt="" class="work__img">
+
+                        <h3 class="work__title">Famous Five</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">Famous Five</h3>
+                                <p class="education__modal-description">
+                                    Author Name: Enid Blyton
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: March 2013
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix edu">
+                        <img src="assets/img/Fundamentals of Optics.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Fundamentals of Optics</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">Fundamentals of Optics</h3>
+                                <p class="education__modal-description">
+                                    Author Name: Fancis A. Jenkins & Harvey E. White
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: December 2018
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix fiction">
+                        <img src="assets/img/Children of the Stars.webp" alt="" class="work__img">
+
+                        <h3 class="work__title">Children of the Stars</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">Children of the Stars</h3>
+                                <p class="education__modal-description">
+                                    Author Name: Everett Croslin Sr.
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: July 2015
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix edu">
+                        <img src="assets/img/Engineering Mechanics.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Engineering Mechanics</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">Engineering Mechanics</h3>
+                                <p class="education__modal-description">
+                                    Author Name: S Timoshenko & D H Young
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: August 2013
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix adv">
+                        <img src="assets/img/The Chronicles of Narnia.webp" alt="" class="work__img">
+
+                        <h3 class="work__title">The Chronicles of Narnia</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">The Chronicles of Narnia</h3>
+                                <p class="education__modal-description">
+                                    Author Name: C S Lewis
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: March 2012
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix adv">
+                        <img src="assets/img/The Crooked Trail.webp" alt="" class="work__img">
+
+                        <h3 class="work__title">The Crooked Trail</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">The Crooked Trail</h3>
+                                <p class="education__modal-description">
+                                    Author Name: M. Gail Grant
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: September 2013
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix edu">
+                        <img src="assets/img/Let Us C.jpg" alt="" class="work__img">
+
+                        <h3 class="work__title">Let Us C</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">Let Us C</h3>
+                                <p class="education__modal-description">
+                                    Author Name: Yashavant Kanetkar
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: March 2019
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix fiction">
+                        <img src="assets/img/The Mystery of the Phantom Lights.webp" alt="" class="work__img">
+
+                        <h3 class="work__title">The Mystery of the Phantom Lights</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">The Mystery of the Phantom Lights</h3>
+                                <p class="education__modal-description">
+                                    Author Name: Kennie Granami
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: April 2012
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="work__card mix fiction">
+                        <img src="assets/img/The Oddmire.webp" alt="" class="work__img">
+
+                        <h3 class="work__title">The Oddmire</h3>
+
+                        <span class="education__button">
+                            See details <i class='bx bx-right-arrow-alt education__icon'></i>
+                        </span>
+
+                        <div class="education__modal">
+                            <div class="education__modal-content">
+                                <i class='bx bx-x education__modal-close'></i>
+
+                                <h3 class="education__modal-title">The Oddmire</h3>
+                                <p class="education__modal-description">
+                                    Author Name: William Ritter
+                                </p>
+
+                                <ul class="education__modal-list">
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Total Copies: 10
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Copies Available: 6
+                                        </p>
+                                    </li>
+
+                                    <li class="education__modal-item">
+                                        <i class='bx bx-check education__modal-icon'></i>
+                                        <p class="education__modal-info">
+                                            Publish Date: October 2015
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle">Get in touch</span>
+                <h2 class="section__title">Contact Me</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Talk to me</h3>
+
+                        <div class="contact__info">
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon'></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">chaitanya.nk2002@gmail.com</span>
+
+                                <a href="mailto:chaitanya.nk2002@gmail.com" target="_blank" class="contact__button">
+                                    Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bxl-whatsapp contact__card-icon'></i>
+                                <h3 class="contact__card-title">Whatsapp</h3>
+                                <span class="contact__card-data">9704671582</span>
+
+                                <a href="https://api.whatsapp.com/send?phone=919704671582&text=Hello, more information!" target="_blank" class="contact__button">
+                                    Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div>
+
+                            <!-- <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon'></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">chaitanya.nk2002@gmail.com</span>
+
+                                <a href="" target="_blank" class="contact__button">
+                                    Write me <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                                </a>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">Write me your Issue</h3>
+
+                        <form action="" class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Names</label>
+                                <input type="text" placeholder="Insert your name" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Mail</label>
+                                <input type="email" placeholder="Insert your email" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Project</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write your issue" class="contact__form-input"></textarea>
+                            </div>
+
+                            <button class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Chaitanya N K</h1>
+
+                <ul class="footer__social">
+                    <a href="https://www.instagram.com/chaitanya_.nk/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/chaitanya-nk-717382195/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; Chaitanya N K. All rights reserved.
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src=""></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
